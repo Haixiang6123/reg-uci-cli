@@ -6,14 +6,14 @@ const axiosInstance = axios.create({
 
 const getOptions = () => {
     return axiosInstance.get('/options').then(response => {
-        console.log(response.data)
+        return response.data
     })
 }
 
 const getCourses = (params) => {
-    axiosInstance.get('/courses', {params})
+    return axiosInstance.get('/courses', {params})
         .then(response => {
-            console.log(response.data)
+            return response.data
         })
 }
 
