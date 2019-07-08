@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const table = require('table').table
 const chalk = require('chalk')
 const commandLineArgs = require('command-line-args')

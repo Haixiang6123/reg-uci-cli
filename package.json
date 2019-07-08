@@ -6,6 +6,9 @@
   "scripts": {
     "start": "node src/index.js"
   },
+  "bin": {
+    "reg-cli": "src/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Haixiang6123/reg-uci-cli.git"
