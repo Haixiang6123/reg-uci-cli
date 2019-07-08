@@ -7,8 +7,9 @@ const utils = require('./utils')
 const columns = ["Code", "Type", "Sec", "Units", "Instructor", "Time", "Place", "Final", "Max", "Enr", "WL", "Req", "Nor", "Rstr", "Textbooks", "Web", "Status"]
 
 const optionDefinitions = [
-    { name: 'dept', type: String },
-    { name: 'yearterm', type: String}
+    { name: 'dept', alias: 'd', type: String },
+    { name: 'coursenum', alias: 'c', type: String },
+    { name: 'yearterm', alias: 't', type: String}
 ]
 
 // Get command arguments
@@ -21,12 +22,15 @@ const requestBody = utils.createRequestBody(options)
 Service.getCourses(requestBody)
     .then(courses => {
         courses.forEach(course => {
+            // Delimiter
+            console.log(chalk.red('#################################'))
+
             // Title
-            console.log(chalk.blue(course.title))
+            console.log(chalk.blue('Course title: ' + course.title))
 
             // Comments
             if (course.comments) {
-                console.log(chalk.yellow(course.comments))
+                console.log(chalk.yellow('Comments: ' + course.comments))
             }
 
             // Sub courses table
@@ -36,5 +40,8 @@ Service.getCourses(requestBody)
             })
             const subCourseTable = table(subCourseRows);
             console.log(subCourseTable)
+
+            // Delimiter
+            console.log(chalk.red('#################################'))
         })
     })
