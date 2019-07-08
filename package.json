@@ -7,7 +7,7 @@
     "start": "node src/index.js"
   },
   "bin": {
-    "reg-cli": "src/index.js"
+    "uci-reg-cli": "src/index.js"
   },
   "repository": {
     "type": "git",
