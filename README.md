@@ -29,3 +29,4 @@ $ reg-uci-cli -d "net sys"
 
 * `-d` Department 
 * `-c` Course number
+* `-t` Year term
