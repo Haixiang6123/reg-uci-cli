@@ -1,13 +1,13 @@
 {
   "name": "uci-reg-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A command line tool to query course information from UCI",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js"
   },
   "bin": {
-    "uci-reg-cli": "src/index.js"
+    "uci-reg": "src/index.js"
   },
   "repository": {
     "type": "git",
