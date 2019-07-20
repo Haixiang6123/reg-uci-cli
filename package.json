@@ -1,6 +1,6 @@
 {
   "name": "uci-reg-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A command line tool to query course information from UCI",
   "main": "src/index.js",
   "scripts": {

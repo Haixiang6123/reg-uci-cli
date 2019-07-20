@@ -1,9 +1,9 @@
 # uci-reg-cli
-A command line tool to query course information from UCI
+A command line tool for querying course information from UCI
 
 ## Screenshot
 
-![](./screenshot/command.png)
+[![asciicast](https://asciinema.org/a/LeTrH16cvp6Yq4NlSZY9fOcZP.svg)](https://asciinema.org/a/LeTrH16cvp6Yq4NlSZY9fOcZP)
 
 ## Install
 
