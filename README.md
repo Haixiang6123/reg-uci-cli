@@ -1,4 +1,4 @@
-# reg-uci-cli
+# uci-reg-cli
 A command line tool to query course information from UCI
 
 ## Screenshot
@@ -8,6 +8,8 @@ A command line tool to query course information from UCI
 ## Install
 
 ```bash
+$ brew install node
+
 $ npm i -g reg-uci-cli
 ```
 
